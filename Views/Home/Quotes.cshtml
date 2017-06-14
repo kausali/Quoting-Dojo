@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Main Page";
+}
+<h1>Here are the awesome quotes!</h1>
+
+@foreach (var i in @ViewBag.Quotes){
+    <p>"@i["quote"]"</p>
+     <p> - @i["name"] at @i["updated_at"]</p>
+     <p>***********************************************************************************************</p>
+
+    
+}
